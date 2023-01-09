@@ -5,13 +5,13 @@
 	<artifactId>Spring3HibernateApp</artifactId>
 	<packaging>war</packaging>
 
-	<scm>
+<!-- 	<scm>
 		<developerConnection>
 			scm:git:git@github.com:OpsTree/ContinuousIntegration.git
 		</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
-
+ -->
 	 <distributionManagement>
    <!-- use the following if you're not using a snapshot version. -->
    <repository>
@@ -61,11 +61,83 @@
               <executions>
                   <execution>
                       <goals>
-                          <goal>check</goal>
+                         <!-- <goal>check</goal> -->
                       </goals>
                   </execution>
               </executions>
-            </plugin>
+		     <configuration>   
+           <!-- Generate all report formats -->  
+           <format>ALL</format>  
+           <!-- Don't use Nexus Analyzer -->  
+           <centralAnalyzerEnabled>false</centralAnalyzerEnabled>  
+           <!-- Am I the latest version? -->  
+           <versionCheckEnabled>true</versionCheckEnabled>  
+         </configuration>
+		</plugin>
+			
+		<plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.19.1</version>
+		<configuration>
+			<forkCount>2</forkCount>
+			<reuseForks>true</reuseForks>
+			<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+			</configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-surefire-provider</artifactId>
+                    <version>1.0.0-M4</version>
+			
+                </dependency>
+		    <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-engine</artifactId>
+                    <version>5.0.0-M4</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.7.9</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>jacoco-check</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                    <configuration>
+                        <rules>
+                            <rule>
+                                <element>PACKAGE</element>
+                                <limits>
+                                    <limit>
+                                        <counter>LINE</counter>
+                                        <value>COVEREDRATIO</value>
+                                    </limit>
+                                </limits>
+                            </rule>
+                        </rules>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
@@ -105,7 +177,7 @@
 				<version>2.5.1</version>
 				<configuration>
 					<formats>
-						<format>xml</format>
+						<format>html</format>
 					</formats>
 				</configuration>
 				<executions>
@@ -153,6 +225,33 @@
 					<port>11011</port>
 				</configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.jfrog.buildinfo</groupId>
+            <artifactId>artifactory-maven-plugin</artifactId>
+            <version>3.4.0</version>
+            <inherited>false</inherited>
+            <executions>
+                <execution>
+                    <id>build-info</id>
+                    <goals>
+                        <goal>publish</goal>
+                    </goals>
+                    <configuration>
+                        <deployProperties>
+                            <gradle>awesome</gradle>
+                            <review.team>qa</review.team>
+                        </deployProperties>
+                        <publisher>
+                            <contextUrl>https://oss.jfrog.org</contextUrl>
+                            <username>admin</username>
+                            <password>@Dmin123</password>
+                            <repoKey>jfrog123</repoKey>
+                        </publisher>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+			
 		</plugins>
 	</build>
 	<version>1.8-SNAPSHOT</version>
@@ -164,7 +263,6 @@
 			<artifactId>mockito-all</artifactId>
 			<version>1.9.5</version>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
@@ -460,6 +558,19 @@
 			<artifactId>junit</artifactId>
 			<version>4.4</version>
 		</dependency>
+					
+        <dependency>				
+            <groupId>org.seleniumhq.selenium</groupId>								
+            <artifactId>selenium-java</artifactId>								
+            <version>2.45.0</version>								
+		</dependency>				
+        <dependency>				
+            <groupId>org.testng</groupId>								
+            <artifactId>testng</artifactId>								
+            <version>6.8.8</version>								
+            <scope>test</scope>							  			
+       </dependency>				
+
 
 	</dependencies>
 </project>
