@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1676290441077,785,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,776,0,33
+1676290441866,56,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,55,0,0
+1676290441923,33,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,27,0,0
+1676290441957,17,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,11,0,0
+1676290441975,9,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,8,0,0
+1676290441985,4,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,3,0,0
+1676290441990,11,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0
+1676290442002,37,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,33,0,0
+1676291000703,96,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,89,0,30
+1676291000810,19,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,18,0,0
+1676291000829,13,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,8,0,0
+1676291000842,11,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0
+1676291000854,15,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,15,0,0
+1676291000870,8,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,7,0,0
+1676291000878,10,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0
+1676291000889,11,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,7,0,0

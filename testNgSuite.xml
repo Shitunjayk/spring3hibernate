@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Suite-test">
+     <test name="test">
+        <classes>
+            <class name="com.sample.GoogleTest" />
+        </classes>
+    </test>
+</suite>

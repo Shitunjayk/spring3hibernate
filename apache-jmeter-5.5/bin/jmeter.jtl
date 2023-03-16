@@ -1,0 +1,9 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1676291096771,75,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,69,0,31
+1676291096848,8,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,7,0,0
+1676291096857,11,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0
+1676291096869,11,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0
+1676291096881,13,project,200,,Thread Group 1-1,text,true,,9134,473,1,1,http://10.44.234.55:9000/projects,11,0,0
+1676291096894,6,issue,200,,Thread Group 1-1,text,true,,9331,173,1,1,http://10.44.234.55:9000/js/main.m.65bfb016.js,5,0,0
+1676291096901,12,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,7,0,0
+1676291096914,12,HTTP Request,200,,Thread Group 1-1,text,true,,47661,187,1,1,http://10.44.234.55:9000/js/vendors-main.m.f8a28baa.chunk.js,6,0,0

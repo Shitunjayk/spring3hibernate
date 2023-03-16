@@ -1,0 +1,24 @@
+2023/02/08 20:16:46 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_IN 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Loading user properties from: /root/apache-jmeter-5.5/bin/user.properties 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Loading system properties from: /root/apache-jmeter-5.5/bin/system.properties 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Setting System property: server_port=1099 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Version 2.13.20180731 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: java.version=11.0.17 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: java.vm.name=OpenJDK 64-Bit Server VM 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: os.name=Linux 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: os.arch=amd64 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: os.version=5.15.0-58-generic 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: Default Locale=English (India) 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: JMeter  Locale=English (India) 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: JMeterHome=/usr/share/jmeter 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: user.dir  =/root/apache-jmeter-5.5/bin 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: PWD       =/root/apache-jmeter-5.5/bin 
+2023/02/08 20:16:46 INFO  - jmeter.JMeter: IP: 10.53.105.105 Name: hj-deldel15736.persistent.co.in FullName: 10.53.105.105 
+2023/02/08 20:16:47 INFO  - jmeter.engine.RemoteJMeterEngineImpl: Starting backing engine on 1099 
+2023/02/08 20:16:47 INFO  - jmeter.engine.RemoteJMeterEngineImpl: Local IP address=10.53.105.105 
+2023/02/08 20:16:47 INFO  - jmeter.engine.RemoteJMeterEngineImpl: IP address is a site-local address; this may cause problems with remote access.
+	Can be overridden by defining the system property 'java.rmi.server.hostname' - see jmeter-server script file 
+2023/02/08 20:16:47 INFO  - jmeter.engine.RemoteJMeterEngineImpl: Creating RMI registry (server.rmi.create=true) 
+2023/02/08 20:16:47 INFO  - jmeter.engine.RemoteJMeterEngineImpl: Bound to registry on port 1099 
